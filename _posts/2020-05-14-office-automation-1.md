@@ -4,8 +4,6 @@ title: automating an annoying work task
 slug: office-automation-1
 ---
 
-build date: 14.05.2020
-
 skills used:
 - python
 - html
