@@ -16,9 +16,6 @@ I created product logos for their new line of kitchen products, one of which was
     <img src="assets\images\graphics\weekend1-8.png" alt="nakiyo images 1" height="200">
     <img src="assets\images\graphics\weekend2-8.png" alt="nakiyo images 2" height="200">
     <img src="assets\images\graphics\weekend3-8.png" alt="nakiyo images 3" height="200">
-</details>
-
-<details><summary>View logo prototypes for "Nakiyo" brand</summary>
     <img src="assets\images\graphics\weekend4-8.png" alt="nakiyo images 4" height="200">
     <img src="assets\images\graphics\weekend5-8.png" alt="nakiyo images 5" height="200">
     <img src="assets\images\graphics\weekend6-8.png" alt="nakiyo images 6" height="200">
