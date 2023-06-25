@@ -1,6 +1,6 @@
 ---
 layout: post
-title: graphic design portfolio projects
+title: graphic design portfolio
 slug: graphic-design
 ---
 
