@@ -1,0 +1,12 @@
+entries:
+  - title: me
+    entries:
+      - title: email
+        url: mailto:patjobri+gitsite@gmail.com
+      - title: github
+        url: http://github.com/cforcomputer.github.io/
+      - title: "<a href='/feed.xml'>rss feed</a>"
+
+
+  - title: posts
+    post_list: true

@@ -1,0 +1,38 @@
+---
+layout: post
+title: EVElopedia community wiki project
+slug: evelopedia
+---
+
+build date: 05.09.2018
+
+skills used:
+ - PHP
+ - CSS
+ - HTML/XML
+ - REST APIs
+ - SQL
+ - marketing
+ - apache
+ - SSO
+ - animation design
+ - graphic design
+ - open source
+ - javascript
+ - python (web crawling)
+
+EVElopedia was my first large-scale, persistent website project, created in 2018. EVElopedia is an open source wiki project that I built using Mediawiki, the foundation of Wikipedia. I designed my own skin, closely modeled from pictures of a defunct game forum with strong nostalgic appeal. 
+
+The skin is available on [MediaWiki.org](https://www.mediawiki.org/wiki/Skin:Eveskin) as an official release. 
+
+You can see the sourcecode for the skin [on my Github.](https://github.com/cforcomputer/eveskin)
+
+The hosting was through a Google Cloud – Linux, Apache, MySQL, PHP (LAMP) tech stack. EVElopedia was a deep dive into the finer elements of HTML, CSS, and the inns and outs of databases, SSO, user verification, and managing my first open source project, with over 15 individual contributors on my Discord Server at its peak.
+
+I created all the graphics for the website, and built a web crawler to move posts from the [archive.org](https://archive.org/) version to the new, fresh site database.
+
+The project was discontinued in 2019.
+
+### photos
+![Evelopedia website](assets/images/projects/Evelo.png)
+![Evelopedia homepage animation](assets/images/projects/moving-banner.gif)
