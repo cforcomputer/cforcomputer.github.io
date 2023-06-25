@@ -5,6 +5,8 @@ entries:
         url: mailto:patjobri+gitsite@gmail.com
       - title: github
         url: http://github.com/cforcomputer.github.io/
+      - title: linkedin
+        url: https://www.linkedin.com/in/patj
       - title: "<a href='/feed.xml'>rss feed</a>"
 
 
