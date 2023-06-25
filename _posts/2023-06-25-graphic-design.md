@@ -1,7 +1,7 @@
 ---
 layout: post
-title: catching a thief
-slug: the-spycam
+title: graphic design portfolio projects
+slug: graphic-design
 ---
 
 skills used:
