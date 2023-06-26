@@ -22,13 +22,23 @@ I created product logos for their new line of kitchen products, one of which was
 </details>
 
 <details><summary>View final "Nakiyo" products</summary>
+Dozens of Nakiyo brand products are now for sale on Chef's depot, Seattle Cutlery, and numerous stores.
     <img src="assets\images\graphics\nakiyo1.png" alt="Black nakiyo knife">
     <img src="assets\images\graphics\set1a.webp" alt="wood japan nakiyo set">
 </details>
 
-
-<details><summary>UWBHacks Event</summary>
-<img src="assets\images\graphics\event-magnet.jpg" alt="uwbhacks magnet retro 80s">
+<details><summary>Concept Art</summary>
+Concept art created in 2013-2014 for Muse Games New York, RSI, and CCP Games and on commission.
+Additional artworks on are on my artstation account. patrickobrien.artstation.com
+<img src="assets\images\graphics\character-concept.jpg" alt="character concept art">
+<img src="assets\images\graphics\robot.jpg" alt="character concept art">
+<img src="assets\images\graphics\star-citizen.jpg" alt="character concept art">
+<img src="assets\images\graphics\tank.jpg" alt="character concept art">
+<img src="assets\images\graphics\hl3.webp" alt="half life fanart">
 </details>
 
+<details><summary>UWBHacks Event</summary>
+A magnet that I designed for the event.
+<img src="assets\images\graphics\event-magnet.jpg" alt="uwbhacks magnet retro 80s">
+</details>
 Additional projects to be added
