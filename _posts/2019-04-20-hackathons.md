@@ -29,7 +29,7 @@ I was the organizer for this campus hackathon. I ran a team of over 20 people, l
 
 The event received over $12,000 in funding allocation from the University of Washington events committee, and we were allocated two buildings and an auditorium venue. We had over 300 attendee registrations, typically in the past we had seen upwards of 200 attendees. However, the event took place in May 2020, just after the start of the pandemic, so all physical events had to be canceled. 
 
-The final event was held online, much of the plans had to be modified or scraped. We built a special website for the hackathon for user registrations. It was a moderate success, with around 100 attendees at its peak. I look forwards to applying the skills that I learned in other large projects, and now understand in depth the importance of involved and exceptional leadership to the success of a team project.
+The final event was held online, much of the plans had to be modified or scraped. We built a special website for the hackathon for user registrations. It was a moderate success, with around 150 attendees at its peak. I look forwards to applying the skills that I learned in other large projects, and now understand in depth the importance of involved and exceptional leadership to the success of a team project.
 
 ### defhacks 2019 - "Simblu"
 [view project](https://devpost.com/software/simblu)
