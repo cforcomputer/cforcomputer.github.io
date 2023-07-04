@@ -1,6 +1,6 @@
 ---
 layout: post
-title: oakhold-group-llc
+title: oakhold group llc
 slug: oakhold
 ---
 
@@ -42,6 +42,6 @@ In order to save time, I rented a space in a pirate-themed thrift store called [
 
 During the pandemic, I also spent a signficant amount of time working on my idea for a mechanical keyboard startup. I spent hours in my room learning how to build a keyboard from scratch. You can read more about my keyboard assembly project [in this post](https://cforcomputer.github.io/keyboard.html). 
 
-Using the parts that I had built, I began to sell the PCBs and other components in kits on my Ebay store. I would buy PCBs for ~$0.50 in bulk and then sell them for $10+ each. This business, combined with the electronics resale, became the outsized part of my income during 2020. I also experimented with Silicon moulding keycaps, which is what the vacuum chamber on my desk was for. I also had created a web store called openkeyboard.com, which I wanted to be the amazon equivalent for anyone to sell parts for their custom mechanical keyboard builds. I planned to move my entire business to the website.
+Using the parts that I had built, I began to sell the PCBs and other components in kits on my Ebay store. I would buy PCBs for ~$0.50 in bulk and then sell them for $10+ each. This business, combined with the electronics resale, became the outsized part of my income during 2020. I also experimented with silicon moulding keycaps, which is what the vacuum chamber on my desk was for. I also had created a web store called openkeyboard.com, which I wanted to be the Amazon equivalent for anyone to sell parts for their custom mechanical keyboard builds. I planned to move my entire business to the website.
 
 ![my bedroom became an lab space in 2020](assets\images\projects\office-space.jpg)
