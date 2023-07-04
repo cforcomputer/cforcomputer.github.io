@@ -13,7 +13,7 @@ skills used:
 The problem
 I was assigned a repetitive task as office work. It must be completed each day, but the level of importance of the task is low compared the duration of time required to complete it.
 
-News articles about the university must be gathered from across the internet, then formatted in HTML line by line. On top of that, the articles must match the required sentence case structure, so each line must be checked for consistency. The result is about an hour’s worth of wasted time every day.
+News articles about the university must be gathered from across the internet, then formatted in HTML line by line. On top of that, the articles must match the required sentence case structure, so each line must be checked for consistency. The result is several hours worth of wasted time every day.
 
 The Solution
 Using python, I built an application to automatically check every line for consistency using ReGex. The code is simple, using a for loop to run through each line. I used Kivy for the user interface and decided to call the program Newser.
