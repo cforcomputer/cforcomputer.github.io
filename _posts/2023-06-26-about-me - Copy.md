@@ -72,7 +72,7 @@ More details to come if I get it published.
 
 I have been paid professionally for some of my graphic design work. My work includes digital paintings, logo design, and graphics for large events.
 
-#### [See all my graphic design projects](graphic-design.md)
+#### [See all my graphic design projects](https://cforcomputer.github.io/graphic-design.html)
 
 ## creator and videographer
 **skills:**
