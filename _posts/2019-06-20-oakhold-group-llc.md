@@ -1,7 +1,7 @@
 ---
 layout: post
 title: oakhold-group-llc
-slug: about-me
+slug: oakhold
 ---
 
 ## oakhold group llc project
