@@ -27,6 +27,8 @@ Dozens of Nakiyo brand products are now for sale on Chef's depot, Seattle Cutler
     <img src="assets\images\graphics\set1a.webp" alt="wood japan nakiyo set">
 </details>
 
+### Concept Art
+During high school, I had dreams of becoming a concept artist for big studios, for both film and videogames. I spent thousands of hours drawing, creating new designs, and watching tutorial videos online. I am entirely self taught.
 <details><summary>Concept Art</summary>
 Concept art created in 2013-2014 for Muse Games New York, RSI, and CCP Games and on commission.
 Additional artworks on are on my artstation account. patrickobrien.artstation.com
@@ -37,6 +39,8 @@ Additional artworks on are on my artstation account. patrickobrien.artstation.co
 <img src="assets\images\graphics\hl3.webp" alt="half life fanart">
 </details>
 
+### Association for Computing Machinery
+While I was an officer for the UWB ACM, I designed posters, stickers, magnets, t-shirts, and websites for events.
 <details><summary>UWBHacks Event</summary>
 A magnet that I designed for the event.
 <img src="assets\images\graphics\event-magnet.jpg" alt="uwbhacks magnet retro 80s">

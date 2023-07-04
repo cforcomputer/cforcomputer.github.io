@@ -29,6 +29,8 @@ After my registration was processed and I had my license, I spent all day riding
 My first few projects with Oakhold were web design related. I continued to work for Optimer International, the company behind Seattle Cutlery, where I had worked as a business strategist. This time as a contractor. I also began to work for the University of Washington at the same time. I would work on websites in the evening, and then finish my homework. On top of scholarships and the money I made from my other job, I was actually able to save money after paying tuition, instead of going into debt like many other students.
 
 ![My office where I worked for seattle cutlery](assets\images\projects\office-seattle.jpg)
+> My Seattle office where I worked for Optimer International.
+
 
 COVID-19 disrupted my flow, and I decided to shift strategies as the global pandemic came into full effect. I built a few more websites for family friends during this time, but continued to brainstorm potential new business ideas. I landed on the idea of refurbishing and reselling used electronics. Living on the island, there wasn't any similar competitor, and there were plenty of wealthy people with too much stuff. 
 
