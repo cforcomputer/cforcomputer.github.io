@@ -11,7 +11,7 @@ skills used:
 
 *Project code is private (sorry)*
 
-
+![Itemfinder tool picture](assets/images/projects/itemfinder.png)
 
 **The problem**
 
@@ -23,4 +23,4 @@ I present! The itemfinder! Using the Ebay browse API, we can grab the listings f
 
 There are additional features, to search, and receive notifications for new listings only, and more are being requested and added.
 
-Now instead of 5 hours, the average search takes less than 20 minutes. The time savings are approximately 74% for single SKU item searches, and over 93% for multi-SKU searches. 
+Now instead of 5 hours, the average search takes less than 20 minutes. The time savings are approximately 74% for single SKU item searches, and over 93% for multi-SKU searches.
