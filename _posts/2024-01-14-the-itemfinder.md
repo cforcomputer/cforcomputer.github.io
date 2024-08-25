@@ -15,7 +15,7 @@ skills used:
 
 **The problem**
 
-The company that I work manually searches Ebay for item listings, in order to source and restock inventory for refurbishment and resale. Since listings are not the same on every ebay site (DE, US, IT, etc.), the sourcing team has to check every site. Furthermore, many of these items have different SKU codes, these slight variations are all the same item. However, they must search for each on invdividually. On average, it takes about five hours to search for all combinations of SKU codes for an item. There is a better to do this!
+The company that I work manually searches Ebay for item listings, in order to source and restock inventory for refurbishment and resale. Since listings are not the same on every ebay site (DE, US, IT, etc.), the sourcing team has to check every site. Furthermore, many of these items have different SKU codes, these slight variations are all the same item. However, they must search for each SKU code invdividually. On average, it takes about five hours to search all combinations of SKU codes for an item. There is a better way to do this!
 
 **The Solution**
 
