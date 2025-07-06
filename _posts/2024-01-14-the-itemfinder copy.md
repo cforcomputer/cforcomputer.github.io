@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Itemfinder
+title: the itemfinder
 slug: the-itemfinder
 ---
 
@@ -26,6 +26,7 @@ It can take days to search through all the sku codes for a set of items. It is l
 #### I present! The itemfinder!
 
 [![itemfinder demo](assets/images/projects/itemfinder-svelte.png)](assets\videos\itemfinder\itemfinder.mp4)
+*Click the image to watch a demo video.*
 
 Now instead of 5 hours, the average search takes less than 20 minutes. The time savings are approximately 74% for single SKU item searches, and over 93% for multi-SKU searches.
 
