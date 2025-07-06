@@ -1,7 +1,7 @@
 ---
 layout: post
-title: the internet radio
-slug: the-internet-radio
+title: internet radio
+slug: internet-radio
 ---
 
 skills used:
@@ -17,8 +17,8 @@ skills used:
 
 #### My introduction to hardware prototyping
 
-[![Internet radio demo](assets/images/projects/itemfinder-svelte.png)]
-*Click the image to watch a demo video.*
+[![Internet radio demo](assets/images/projects/radio-prototypes.jpg)]()
+*Click the image to watch a demo video.* (has not been added yet)
 
 WIP post.
 
@@ -34,3 +34,6 @@ I used Onshape for the 3D component of this project, and went through many itera
 
 I was surprised by how few working internet radio project there were. Most of the examples that I found were no longer functional or too limited. 
 I forked a project that I found on youtube, but it was non-functional and I ended up redoing the entire thing with a different audio library.
+
+The bluetooth pairing to my phone and pc works flawlessly. 
+![Internet radio bluetooth mode](assets/images/projects/radio-bluetooth.jpg)
