@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OpenSleep Cooler
+title: opensleep cooler
 slug: opensleep-cooler
 ---
 
