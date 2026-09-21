@@ -5,3 +5,4 @@ vendor
 .jekyll-metadata
 docker-compose.yml
 .vscode
+.bundle
