@@ -28,4 +28,4 @@ The core of the setup was a UniFi Cloud Gateway Fiber running UniFi OS, which ha
 
 Wireless ran on a U7 Pro Max (tri-band Wi-Fi 7, including 6 GHz), and everything was uplinked through a compact 10G switch. Exceptionally overkill, but that's what I needed after decades of slow, barely functional internet. The main bottleneck ended up being my own computer: its onboard NIC couldn't keep up with the line rate, so I added a multi-gig network adapter and worked through its driver issues to actually see 4 Gbps.
 
-Cost per person? $20 per month. Everyone including me was very happy. I found that delivering a service that brought relief to people was well worth the money. I think more people could benefit from having side hustle hobbies like this that help their communities. Just do it!
+Cost per person? $20 per month. Everyone including me was very happy. I found that delivering a service that brought relief to people was well worth the money. I think more people could benefit from having side hustle hobbies like this that help their communities. If you've been thinking about something for a while... just do it!
