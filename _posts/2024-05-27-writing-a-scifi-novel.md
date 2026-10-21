@@ -9,7 +9,7 @@ skills used:
 - Imagination
 - Discipline
 
-[https://www.youtube.com/playlist?list=PLGYsoU9CFGfc](I read the entire book on youtube)
+[I read the entire book on youtube](https://www.youtube.com/playlist?list=PLGYsoU9CFGfc)
 
 ### Sule - a scifi novel
 

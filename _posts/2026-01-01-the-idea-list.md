@@ -8,7 +8,7 @@ skills used:
 - Creativity
 - Imagination
 
-[https://github.com/cforcomputer/ideas](Link to the idea list)
+[Link to the idea list](https://github.com/cforcomputer/ideas)
 
 ### An idea a day keeps the alzheimers at bay
 
