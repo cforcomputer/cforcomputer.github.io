@@ -18,7 +18,7 @@ One of the things that I put off for way too long at my apartment in Groningen w
 
 ANYWAY. Finally I was fed up with using the shared apartment wifi. One single 100mbps connection shared between 20 people is not ideal. Oftentimes it wouldn't work at all, and I would write my book instead.
 
-It clicked at some point that since my apartment complex was rent controlled, and attracted the kind of people who also wanted to save money, I could simply offer split the bill between everyone on the fastest gigabit fiber available, which in this case was 4000 mbps synchronous fiber since I was in the middle of the city.
+It clicked at some point that since my apartment complex was rent controlled, and attracted the kind of people who also wanted to save money, I could simply offer to split the bill between everyone on the fastest gigabit fiber available, which in this case was 4000 mbps synchronous fiber since I was in the middle of the city.
 
 I spent several months going back and forth between the store and the dutch telecom company KPN, and they eventually did send someone out to lay a new line directly to my apartment. Then I wrote on my window advertising the internet share. Two of my neighbors signed up, and I used this as the excuse I needed to spend over a thousand dollars on ubiquiti enterprise networking gear I wanted. 
 
