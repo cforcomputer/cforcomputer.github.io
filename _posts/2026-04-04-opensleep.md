@@ -12,8 +12,12 @@ skills used:
 - Reverse Engineering
 - Product design
 
-[view project code](https://hackaday.io/project/205182-opencooler)
+[view the project on hackaday (most up-to-date)](https://hackaday.io/project/205182-opencooler)
 
 ### Open source bed cooler
 
-View the project code above for a detailed description of the project and a link to the Github. I'll fill the rest of this in when I get a chance.
+![Picture of the cooler](assets/images/projects/cooler.jpeg)
+
+I am maintaining a log of this project on Hackaday instead of my personal blog for visibility. You can find a brief summary here, but all the details and photos are on the Hackaday page after you click the link above. There you can scroll to the bottom of the page for project logs and updates.
+
+The Opencooler is an affordability-focused precise temperature water chiller or heater for use in a bed mattress. With a universal fitting, it can be used with any attached accessory. The goal is to bring an easy to use solid state climate control system to anyone around the world, so everyone can sleep on a warming planet.
