@@ -100,7 +100,9 @@ video {
 /* ---------- home page ---------- */
 
 .home {
-  max-width: 440px;
+  /* shrink to the widest line so the block is optically centered */
+  width: fit-content;
+  max-width: 100%;
   margin: 4rem auto 0;
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -253,7 +255,7 @@ video {
   .w { padding: 1.25rem 1.25rem 4rem; }
 
   /* home: big, easy-to-tap rows like an iOS list */
-  .home { margin-top: 1.5rem; font-size: 17px; }
+  .home { width: auto; margin-top: 1.5rem; font-size: 17px; }
   .home-header { margin-bottom: 1.75rem; }
   .home-title { font-size: 1.6rem; margin-bottom: 0.25rem; }
   .home-links { gap: 0 1.5rem; font-size: 1.05rem; }
