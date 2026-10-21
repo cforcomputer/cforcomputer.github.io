@@ -16,7 +16,7 @@ skills used:
 
 ### Open source bed cooler
 
-![Picture of the cooler](assets/images/projects/cooler.jpeg)
+![Picture of the cooler](assets/images/projects/cooler/cooler.jpg)
 
 I am maintaining a log of this project on Hackaday instead of my personal blog for visibility. You can find a brief summary here, but all the details and photos are on the Hackaday page after you click the link above. There you can scroll to the bottom of the page for project logs and updates.
 
