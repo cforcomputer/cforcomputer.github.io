@@ -22,7 +22,7 @@ It clicked at some point that since my apartment complex was rent controlled, an
 
 I spent several months going back and forth between the store and the dutch telecom company KPN, and they eventually did send someone out to lay a new line directly to my apartment. Then I wrote on my window advertising the internet share. Two of my neighbors signed up, and I used this as the excuse I needed to spend over a thousand dollars on ubiquiti enterprise networking gear I wanted. 
 
-![Picture of networking setup](assets/images/projects/networking/networking-setup.jpeg)
+![Picture of networking setup](assets/images/projects/networking/networking-setup.webp)
 
 I had the router, which was the Cloud Gateway Fiber running Ubiquiti Cloud OS Server, that was managing the networks I set up for my neighbors, so they could keep all of their smart devices separate.
 
