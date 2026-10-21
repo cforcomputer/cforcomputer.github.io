@@ -26,3 +26,18 @@ layout: default
     {{ content }}
   </div>
 </article>
+
+<script>
+  // Let readers tap any image to open it full size (helps with detailed screenshots on phones).
+  document.querySelectorAll(".post-body img").forEach(function (img) {
+    if (img.closest("a")) return;
+    var a = document.createElement("a");
+    a.href = img.currentSrc || img.src;
+    a.className = "img-link";
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.setAttribute("aria-label", "Open image full size" + (img.alt ? ": " + img.alt : ""));
+    img.parentNode.insertBefore(a, img);
+    a.appendChild(img);
+  });
+</script>
