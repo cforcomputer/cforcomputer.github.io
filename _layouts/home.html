@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<header class="home-header">
+  <h1 class="home-title">{{ site.title }}</h1>
+  {%- if site.theme_config.show_description %}
+  <p class="home-description">{{ site.description }}</p>
+  {%- endif %}
+
+  <nav class="home-links">
+    {%- for group in site.data.menu.entries -%}
+      {%- for item in group.entries -%}
+        {%- if item.url -%}
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        {%- else -%}
+          {{ item.title }}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  </nav>
+</header>
+
+<ul class="home-posts">
+  {%- for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">
+      <span class="home-post-title">{{ post.title }}</span>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+    </a>
+  </li>
+  {%- endfor %}
+</ul>
+
+{{ content }}
