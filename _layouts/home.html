@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<div class="home">
 <header class="home-header">
   <h1 class="home-title">{{ site.title }}</h1>
   {%- if site.theme_config.show_description %}
@@ -24,11 +25,13 @@ layout: default
   {%- for post in site.posts %}
   <li>
     <a href="{{ post.url | relative_url }}">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m" }}</time>
       <span class="home-post-title">{{ post.title }}</span>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
     </a>
   </li>
   {%- endfor %}
 </ul>
+
+</div>
 
 {{ content }}
