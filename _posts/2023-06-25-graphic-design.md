@@ -31,7 +31,7 @@ Dozens of Nakiyo brand products are now for sale on Chef's depot, Seattle Cutler
 During high school, I had dreams of becoming a concept artist for big studios, for both film and videogames. I spent thousands of hours drawing, creating new designs, and watching tutorial videos online. I am entirely self taught.
 <details><summary>Concept Art</summary>
 Concept art created in 2013-2014 for Muse Games New York, RSI, and CCP Games and on commission.
-Additional artworks on are on my artstation account. patrickobrien.artstation.com
+Additional artworks are on my artstation account. patrickobrien.artstation.com
 <img src="assets\images\graphics\character-concept.jpg" alt="character concept art">
 <img src="assets\images\graphics\robot.jpg" alt="character concept art">
 <img src="assets\images\graphics\star-citizen.jpg" alt="character concept art">

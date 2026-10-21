@@ -30,7 +30,7 @@ The radio can:
 3. Allow the user to add any internet radio station
 4. Act as a visualizer for music
 
-I was surprised by how few working internet radio project there were. Most of the examples that I found were no longer functional or too limited. 
+I was surprised by how few working internet radio projects there were. Most of the examples that I found were no longer functional or too limited. 
 I forked a project that I found on youtube, but it was non-functional and I ended up redoing the entire thing with a different audio library.
 
 ![CAD drawing in Onshape](assets/images/projects/radio3d.png)
