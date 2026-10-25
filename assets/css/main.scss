@@ -1,4 +1,6 @@
 ---
 ---
 
-@use "no-style-please";
+// Must stay @import: GitHub Pages builds with Jekyll 3 + libsass, which
+// doesn't support @use and ships the line uncompiled (breaking all styles).
+@import "no-style-please";
