@@ -141,6 +141,12 @@ video {
   color: #1d1d1f;
 }
 
+/* shown on phones only (link-page layout) */
+.home-tagline,
+.home-posts-heading {
+  display: none;
+}
+
 .home-posts {
   list-style: none;
   margin: 0;
@@ -256,13 +262,45 @@ video {
 
   /* home: big, easy-to-tap rows like an iOS list */
   .home { width: auto; margin-top: 1.5rem; font-size: 17px; }
-  .home-header { margin-bottom: 1.75rem; }
-  .home-title { font-size: 1.6rem; margin-bottom: 0.25rem; }
-  .home-links { gap: 0 1.5rem; font-size: 1.05rem; }
+  .home { max-width: 480px; margin-left: auto; margin-right: auto; }
+  .home-header { margin-bottom: 2rem; text-align: center; }
+  .home-title { font-size: 1.7rem; margin-bottom: 0.2rem; }
+  .home-tagline { display: block; color: #6e6e73; margin: 0 0 1.5rem; font-size: 1rem; }
+
+  /* links as full-width buttons, LinkedIn first and filled */
+  .home-links { flex-direction: column; flex-wrap: nowrap; gap: 0.75rem; font-size: 1.05rem; }
   .home-links a {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    min-height: 48px;
+    justify-content: center;
+    min-height: 56px;
+    padding: 0.5rem 1rem;
+    border: 1.5px solid #d2d2d7;
+    border-radius: 14px;
+    background: #fff;
+    color: #1d1d1f;
+    font-weight: 600;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.08s ease, background-color 0.08s ease;
+  }
+  .home-links a:active { transform: scale(0.98); background: #f2f2f7; }
+  .home-links a.primary {
+    background: #0a66c2;
+    border-color: #0a66c2;
+    color: #fff;
+  }
+  .home-links a.primary:active { background: #004182; border-color: #004182; }
+
+  .home-posts-heading {
+    display: block;
+    margin: 0 0 0.25rem;
+    color: #6e6e73;
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
   .home-posts li + li { border-top: 1px solid #f0f0f0; }
   .home-posts a {

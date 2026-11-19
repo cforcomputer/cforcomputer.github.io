@@ -2,6 +2,7 @@
 layout: post
 title: the itemfinder
 slug: the-itemfinder
+description: "The itemfinder: a Python and SvelteKit tool that searches eBay sites in several countries to source and restock inventory."
 ---
 
 <video autoplay loop controls muted playsinline preload="metadata" poster="{{ '/assets/images/projects/itemfinder-svelte.png' | relative_url }}" style="max-width: 100%; height: auto;">

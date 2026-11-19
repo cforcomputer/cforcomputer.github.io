@@ -2,6 +2,7 @@
 layout: post
 title: opensleep cooler
 slug: opensleep-cooler
+description: "Opencooler: an affordable open-source water chiller and heater for a bed mattress, built with Arduino, Onshape and 3D printing."
 ---
 
 skills used:

@@ -2,6 +2,7 @@
 layout: post
 title: drones for ukraine
 slug: drones-for-ukraine
+description: "Building an FPV drone for Ukraine with SocialDroneUA: parts, 3D printing, soldering, a DIY battery, flashing and shipping it."
 ---
 
 skills used:

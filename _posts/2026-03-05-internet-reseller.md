@@ -2,6 +2,7 @@
 layout: post
 title: internet reseller
 slug: internet-reseller
+description: "Sharing a gigabit fiber line with 20 neighbours in Groningen: UniFi gateway, a VLAN per household, Wi-Fi 7, $20 a month each."
 ---
 
 skills used:

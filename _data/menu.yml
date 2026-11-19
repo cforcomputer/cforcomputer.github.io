@@ -1,14 +1,17 @@
 entries:
   - title: me
     entries:
-      - title: email
-        url: mailto:patjobri+gitsite@gmail.com
-      - title: github
-        url: http://github.com/cforcomputer
       - title: linkedin
         url: https://www.linkedin.com/in/patj
-      - title: "<a href='/feed.xml'>rss feed</a>"
-
+        primary: true
+      - title: github
+        url: https://github.com/cforcomputer
+      - title: build hardware with ai
+        url: https://cforcomputer.github.io/build-hardware-with-ai/
+      - title: email
+        url: mailto:patjobri+gitsite@gmail.com
+      - title: rss feed
+        url: /feed.xml
 
   - title: posts
     post_list: true

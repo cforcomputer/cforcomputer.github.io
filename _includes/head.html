@@ -4,8 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="google-site-verification" content="eh6_NLwsHNHPrLRcBE9AZh-9RWDJiMszGDHSRgveYkc" />
 
+  <meta name="theme-color" content="#ffffff" />
+
   <title>
-    {%- if page.title -%}
+    {%- if page.url == "/" -%}
+      {{ site.seo_title | default: site.title }}
+    {%- elsif page.layout == "post" -%}
+      {{ page.title }} · {{ site.author }}
+    {%- elsif page.title -%}
       {{ page.title }}
     {%- else -%}
       {{ site.title }}
@@ -14,6 +20,13 @@
 
   {%-seo title=false-%}
   {%-feed_meta-%}
+  {%- if page.url == "/" %}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":{{ site.author | jsonify }},"url":{{ site.url | jsonify }},
+   "description":{{ site.description | jsonify }},
+   "sameAs":["https://www.linkedin.com/in/patj","https://github.com/cforcomputer"]}
+  </script>
+  {%- endif %}
 
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />

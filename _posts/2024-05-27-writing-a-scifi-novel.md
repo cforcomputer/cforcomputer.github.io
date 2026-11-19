@@ -2,6 +2,7 @@
 layout: post
 title: writing a scifi novel
 slug: writing-a-scifi-novel
+description: "Writing a science-fiction novel, what it takes to build a plot and characters, and the whole book read aloud on YouTube."
 ---
 
 skills used:

@@ -7,12 +7,13 @@ layout: default
   {%- if site.theme_config.show_description %}
   <p class="home-description">{{ site.description }}</p>
   {%- endif %}
+  <p class="home-tagline">hardware, software and writing</p>
 
-  <nav class="home-links">
+  <nav class="home-links" aria-label="Links">
     {%- for group in site.data.menu.entries -%}
       {%- for item in group.entries -%}
         {%- if item.url -%}
-          <a href="{{ item.url }}">{{ item.title }}</a>
+          <a href="{{ item.url }}"{% if item.primary %} class="primary"{% endif %}{% if item.url contains "://" %} rel="me noopener"{% endif %}>{{ item.title }}</a>
         {%- else -%}
           {{ item.title }}
         {%- endif -%}
@@ -21,6 +22,7 @@ layout: default
   </nav>
 </header>
 
+<h2 class="home-posts-heading">posts</h2>
 <ul class="home-posts">
   {%- for post in site.posts %}
   <li>

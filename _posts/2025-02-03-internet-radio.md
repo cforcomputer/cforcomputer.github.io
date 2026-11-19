@@ -2,6 +2,7 @@
 layout: post
 title: internet radio
 slug: internet-radio
+description: "An ESP32 (TTGO) internet radio and Bluetooth speaker in a 3D-printed enclosure designed in Onshape, with the Arduino code on GitHub."
 ---
 
 skills used:

@@ -2,6 +2,7 @@
 layout: post
 title: hackathons
 slug: hackathons
+description: "Organizing a campus hackathon: leading a team of more than 20 people through six months of weekly meetings."
 ---
 
 skills used:

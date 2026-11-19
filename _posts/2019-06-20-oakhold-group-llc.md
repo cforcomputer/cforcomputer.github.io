@@ -2,6 +2,7 @@
 layout: post
 title: oakhold group llc
 slug: oakhold
+description: "Starting Oakhold Group LLC at 21: registering a Washington company, banking, marketing, shipping and US LLC taxes."
 ---
 
 ## oakhold group llc project

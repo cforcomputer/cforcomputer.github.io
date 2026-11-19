@@ -2,6 +2,7 @@
 layout: post
 title: graphic design portfolio
 slug: graphic-design
+description: "Graphic design portfolio: logos for the Nakiyo kitchen line, now sold in stores, plus Photoshop, Illustrator and photography work."
 ---
 
 skills used:

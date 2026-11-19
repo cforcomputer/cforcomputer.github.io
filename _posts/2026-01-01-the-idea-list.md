@@ -2,6 +2,7 @@
 layout: post
 title: the idea list
 slug: idea-list
+description: "The idea list: a public list of project ideas on GitHub, and why every idea gets written down."
 ---
 
 skills used:
