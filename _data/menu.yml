@@ -6,8 +6,6 @@ entries:
         primary: true
       - title: github
         url: https://github.com/cforcomputer
-      - title: build hardware with ai
-        url: https://cforcomputer.github.io/build-hardware-with-ai/
       - title: email
         url: mailto:patjobri+gitsite@gmail.com
       - title: rss feed
