@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+{%- include head.html -%}
+<body class="pp">
+  <nav class="pp-top"><a href="{{ "/" | relative_url }}">&larr; {{ site.title }}</a></nav>
+  <main>
+    <header class="pp-hero">
+      <h1 class="pp-title">{{ page.display_title | default: page.title }}</h1>
+      {%- if page.subtitle %}<p class="pp-subtitle">{{ page.subtitle }}</p>{% endif %}
+      <p class="pp-authors"><a href="{{ "/" | relative_url }}">{{ site.author }}</a></p>
+      <p class="pp-meta">{{ page.meta_line }} · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %Y" }}</time></p>
+      {%- if page.buttons %}
+      <div class="pp-buttons">
+        {%- for b in page.buttons %}
+        <a class="pp-btn" href="{{ b.url }}"{% if b.url contains "://" %} rel="noopener"{% endif %}>
+          {%- case b.icon -%}
+          {%- when "code" -%}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6.5 3 12l5.5 5.5M15.5 6.5 21 12l-5.5 5.5"/></svg>
+          {%- when "page" -%}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v4h4M9 12h6M9 16h6"/></svg>
+          {%- when "tag" -%}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8zM7.5 8.5h.01"/></svg>
+          {%- when "install" -%}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>
+          {%- endcase -%}
+          <span>{{ b.label }}</span>
+        </a>
+        {%- endfor %}
+      </div>
+      {%- endif %}
+    </header>
+    {{ content }}
+  </main>
+  <footer class="pp-footer"><a href="{{ "/" | relative_url }}">&larr; more projects by {{ site.author }}</a></footer>
+  <script>
+    // Respect reduced motion: stop autoplaying clips and show their controls instead.
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll("video[autoplay]").forEach(function (v) { v.pause(); v.removeAttribute("autoplay"); v.controls = true; });
+    }
+    // Tap a figure to open it full size (small text in plots on phones).
+    document.querySelectorAll(".pp figure img").forEach(function (img) {
+      if (img.closest("a")) return;
+      var a = document.createElement("a");
+      a.href = img.currentSrc || img.src; a.target = "_blank"; a.rel = "noopener";
+      a.setAttribute("aria-label", "Open image full size" + (img.alt ? ": " + img.alt : ""));
+      a.style.cursor = "zoom-in";
+      img.parentNode.insertBefore(a, img); a.appendChild(img);
+    });
+    document.querySelectorAll(".pp-copy").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var t = document.getElementById(b.dataset.target).innerText;
+        if (navigator.clipboard) navigator.clipboard.writeText(t).then(function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy"; }, 1500); });
+      });
+    });
+  </script>
+</body>
+</html>

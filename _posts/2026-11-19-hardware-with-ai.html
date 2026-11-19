@@ -1,0 +1,187 @@
+---
+layout: project
+title: build hardware with ai
+display_title: "Build Hardware with AI"
+slug: hardware-with-ai
+subtitle: "Checks, tools and skills that let an AI agent research, design, verify and order real hardware"
+meta_line: "Open source · MIT · v0.2.1"
+description: "An open-source MCP server, CLI and Claude Code plugin that checks 3D prints, part fit, KiCad PCBs, Gerbers, BOMs and optics before an AI agent orders hardware."
+image: /assets/images/projects/hardware-with-ai/sweep_poster.png
+buttons:
+  - label: Code
+    url: https://github.com/cforcomputer/build-hardware-with-ai
+    icon: code
+  - label: Docs
+    url: https://cforcomputer.github.io/build-hardware-with-ai/
+    icon: page
+  - label: Release
+    url: https://github.com/cforcomputer/build-hardware-with-ai/releases
+    icon: tag
+  - label: Install
+    url: "#install"
+    icon: install
+---
+{% assign img = "/assets/images/projects/hardware-with-ai/" | relative_url %}
+
+<section class="pp-teaser">
+  <figure>
+    <video autoplay loop muted playsinline preload="metadata" poster="{{ img }}sweep_poster.png">
+      <source src="{{ img }}sweep.mp4" type="video/mp4">
+    </video>
+    <figcaption><b>Motion sweep.</b> A tray slides into a case. At every step the kit measures the exact gap, or the exact overlap volume, between the moving part and everything else. The tray clears the front slot by 1.00 mm, then hits a screw boss that was drawn too far forward. The agent gets the position and the overlap, not a picture to guess from.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Abstract</h2>
+  <div class="pp-text pp-abstract">
+    <p>AI agents can now draw a circuit board or a 3D-printed case in minutes. The hard part is knowing whether it will work when it arrives: whether the walls are thick enough for the printer, whether the lid fits, whether the screw is long enough, whether the Gerber files the factory receives really match the schematic. Each mistake costs an order and two weeks.</p>
+    <p><b>build-hardware-with-ai</b> gives an agent the checks an experienced engineer runs before ordering. It ships as a Python command-line tool (<code>hwkit</code>), an MCP server with 40 tools that any MCP client can call (Claude Code, Codex, Cursor and others), and a Claude Code plugin with seven guides covering PCBs, printed parts, hand assembly, sourcing, simulation and optical instruments. Each check reports PASS, WARN or FAIL with the numbers behind it, and each limit cites the manufacturer's published rule. The rules came from building real hardware with an agent and writing down every mistake made along the way.</p>
+  </div>
+</section>
+
+<section>
+  <h2>What it checks</h2>
+  <div class="pp-text">
+    <ul class="pp-list">
+      <li><b>3D printing:</b> measured wall thickness against JLC3DP's limit for the part's size, trapped resin or powder, build volume, supports, tolerance and mass, for SLA, MJF, SLS, SLM metal and FDM.</li>
+      <li><b>Mechanics:</b> exact overlap and gap between parts, sweeps of moving parts over their whole travel, a straight tool path to every screw, and screw stacks with ISO length tolerances.</li>
+      <li><b>Circuit boards:</b> KiCad's design-rule check with JLCPCB's limits, Gerber files rebuilt into copper and compared with the schematic, BOM and placement files, stencil area ratios, a review by kicad-happy and routing by KiCadRoutingTools.</li>
+      <li><b>Research and parts:</b> paper search (OpenAlex, arXiv), datasheet download and search, and live prices from LCSC, Mouser and DigiKey with the source and date on every number.</li>
+      <li><b>Optics:</b> Gaussian beams through lens trains, objective back apertures and fill, focal spots, drag near a wall, Mie scattering, and stiffness calibration from thermal motion.</li>
+      <li><b>Heavy jobs:</b> simulations and routing run in a queue, one at a time, with a memory cap.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Results</h2>
+  <div class="pp-grid">
+    <figure class="pp-boxed">
+      <img src="{{ img }}walls.png" alt="A printed bracket coloured by measured wall thickness: the 0.6 mm rib is red, the 1.6 mm rib yellow, the rest green." loading="lazy">
+      <figcaption><b>Wall thickness, measured.</b> Rays cast inward from every point of the surface measure the wall. For MJF nylon at this size the limit is 2.0 mm, so the check fails the 0.6 mm rib and flags the 1.6 mm one.</figcaption>
+    </figure>
+    <figure class="pp-boxed">
+      <img src="{{ img }}gerbers.png" alt="Copper rebuilt from Gerber files, coloured by net; with a planted bridge the two nets turn red." loading="lazy">
+      <figcaption><b>Gerbers against the schematic.</b> The kit rebuilds the copper from the files the factory receives and joins layers through the plated holes. To prove it can see a fault, it plants a 0.1 mm bridge and checks that it reports a short.</figcaption>
+    </figure>
+    <figure class="pp-boxed pp-wide">
+      <img src="{{ img }}compare.png" alt="Before and now sheet of a case: sharp box on top, rounded box below, from four views." loading="lazy">
+      <figcaption><b>Before and now, from the same views.</b> When a form changes, one labelled sheet at the same scale settles whether the new version is better. A long run of single renders tends to read as the design getting worse.</figcaption>
+    </figure>
+    <figure class="pp-boxed pp-wide">
+      <img src="{{ img }}beam.png" alt="Gaussian beam radius along a 4x telescope and a 4f relay ending at an objective's 8 mm back aperture." loading="lazy">
+      <figcaption><b>Beam path.</b> A 1 mm beam at 1064 nm through a 4× telescope and a 4f relay, ending at the back aperture of a 60×/1.2 water objective (8.0 mm). The fill ratio is 1.0, so 86.5 % of the power passes.</figcaption>
+    </figure>
+    <figure class="pp-boxed pp-wide">
+      <img src="{{ img }}psd.png" alt="Power spectrum of a simulated position record with the fitted spectrum and the corner frequency." loading="lazy">
+      <figcaption><b>Stiffness from thermal motion.</b> The kit fits the exact spectrum of a sampled record, with aliasing included, by maximum likelihood (Berg-Sørensen &amp; Flyvbjerg 2004). On a simulated 0.5 µm-radius sphere held at 0.0200 pN/nm, it recovers 0.0204 pN/nm.</figcaption>
+    </figure>
+  </div>
+  <div class="pp-text">
+    <p>Every check is tested against a known answer: a 0.3 mm gap measures 0.300 mm, a removed via is reported as an open, and a lens focuses a beam to λf/πw. The tests run on macOS and Ubuntu with Python 3.11 to 3.13.</p>
+  </div>
+</section>
+
+<section>
+  <h2>The acoustic replicator</h2>
+  <div class="pp-note">A simulation study, designed with an AI agent in the same way. The simulation says the idea is physically sound and worth a bench prototype. Nothing has been built yet.</div>
+  <div class="pp-text">
+    <p>The <a href="https://github.com/cforcomputer/acoustic-replicator">acoustic replicator</a> is a 3D printer that carries droplets of UV resin through the air with a 40 kHz ultrasonic phased array and cures them one at a time onto a part hanging on a pin. The study covers the physics, the full hardware design (printed frame, every bought part, screw and wire) and a routed transducer board ready for JLCPCB.</p>
+  </div>
+  <div class="pp-grid">
+    <figure class="pp-wide">
+      <video autoplay loop muted playsinline preload="metadata" poster="{{ img }}replicator_print_poster.png" style="max-width: 460px; margin: 0 auto;">
+        <source src="{{ img }}replicator_print.mp4" type="video/mp4">
+      </video>
+      <figcaption style="text-align: center;"><b>The whole 4-hour print, simulated</b>, seen from an in-machine camera at about 1000× speed, with UV cure flashes.</figcaption>
+    </figure>
+    <figure>
+      <img src="{{ img }}replicator_machine.jpg" alt="The replicator's full hardware model inside its enclosure." loading="lazy">
+      <figcaption><b>The machine.</b> 1,197 solids with no overlaps, 224 wires terminated, and six service motions with no collisions.</figcaption>
+    </figure>
+    <figure>
+      <img src="{{ img }}replicator_cage.jpg" alt="The transducer cage: green boards on a rhombicuboctahedron with wiring." loading="lazy">
+      <figcaption><b>The array cage.</b> 18 boards carrying 450 transducers on a rhombicuboctahedron.</figcaption>
+    </figure>
+    <figure class="pp-wide">
+      <img src="{{ img }}replicator_benchy.jpg" alt="Three simulated Benchy prints made of droplets." loading="lazy">
+      <figcaption><b>Simulated prints</b> of <a href="https://www.3dbenchy.com/">3DBenchy</a> (by Creative Tools): one droplet size, a fine shell, and landing errors measured on Benchy flights. Mean surface error 0.05 to 0.09 mm.</figcaption>
+    </figure>
+    <figure class="pp-wide">
+      <img src="{{ img }}replicator_tb25.png" alt="Four copper layers of the TB-25 transducer board." loading="lazy" style="max-width: 640px; margin: 0 auto;">
+      <figcaption style="text-align: center;"><b>TB-25 transducer board</b>: four layers, routed and checked from its Gerber files.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <h2>Repositories</h2>
+  <div class="pp-cards">
+    <a class="pp-card pp-mine" href="https://github.com/cforcomputer/build-hardware-with-ai">
+      <div class="pp-repo"><span class="pp-owner">cforcomputer/</span>build-hardware-with-ai</div>
+      <p>This toolkit: the CLI, the 40-tool MCP server, the Claude Code plugin and its guides.</p>
+    </a>
+    <a class="pp-card pp-mine" href="https://github.com/cforcomputer/acoustic-replicator">
+      <div class="pp-repo"><span class="pp-owner">cforcomputer/</span>acoustic-replicator</div>
+      <p>The acoustic-levitation printer study: physics simulation, hardware model, routed board and report.</p>
+    </a>
+    <a class="pp-card" href="https://github.com/aklofas/kicad-happy">
+      <div class="pp-repo"><span class="pp-owner">aklofas/</span>kicad-happy</div>
+      <p>Agent skills for KiCad: schematic analysis, PCB review, EMC pre-compliance, SPICE. The kit runs its review and re-measures its keepout findings.</p>
+    </a>
+    <a class="pp-card" href="https://github.com/drandyhaas/KiCadRoutingTools">
+      <div class="pp-repo"><span class="pp-owner">drandyhaas/</span>KiCadRoutingTools</div>
+      <p>Python and Rust tools for routing KiCad boards. The kit runs it as a background job and judges each route with KiCad's rule check.</p>
+    </a>
+    <a class="pp-card" href="https://gitlab.com/kicad/code/kicad">
+      <div class="pp-repo"><span class="pp-owner">kicad/</span>kicad</div>
+      <p>The open-source PCB suite. <code>kicad-cli</code> runs the design-rule checks and writes the fabrication files.</p>
+    </a>
+    <a class="pp-card" href="https://github.com/elalish/manifold">
+      <div class="pp-repo"><span class="pp-owner">elalish/</span>manifold</div>
+      <p>Robust solid geometry. It gives the exact overlap volumes and least gaps behind the fit and sweep checks.</p>
+    </a>
+    <a class="pp-card" href="https://github.com/mikedh/trimesh">
+      <div class="pp-repo"><span class="pp-owner">mikedh/</span>trimesh</div>
+      <p>Triangle meshes in Python: loading parts, and the ray casting that measures wall thickness.</p>
+    </a>
+    <a class="pp-card" href="https://gitlab.com/gerbolyze/gerbonara">
+      <div class="pp-repo"><span class="pp-owner">gerbolyze/</span>gerbonara</div>
+      <p>Gerber and Excellon parsing, used to rebuild the copper the factory will make.</p>
+    </a>
+    <a class="pp-card" href="https://github.com/modelcontextprotocol/python-sdk">
+      <div class="pp-repo"><span class="pp-owner">modelcontextprotocol/</span>python-sdk</div>
+      <p>The official Model Context Protocol SDK that the kit's server is built on.</p>
+    </a>
+  </div>
+</section>
+
+<section id="install">
+  <h2>Install</h2>
+  <div class="pp-text">
+    <p>In Claude Code, add kicad-happy's marketplace first (the plugin depends on it), then this one:</p>
+<pre id="pp-install"><button class="pp-copy" data-target="pp-install-code" type="button">Copy</button><code id="pp-install-code">/plugin marketplace add aklofas/kicad-happy
+/plugin marketplace add cforcomputer/build-hardware-with-ai
+/plugin install build-hardware-with-ai@build-hardware-with-ai</code></pre>
+    <p>For any other MCP client, the server's command is:</p>
+<pre><code>uvx --from git+https://github.com/cforcomputer/build-hardware-with-ai hwkit mcp</code></pre>
+    <p>For the command-line tool alone:</p>
+<pre><code>uv tool install git+https://github.com/cforcomputer/build-hardware-with-ai</code></pre>
+  </div>
+</section>
+
+<section>
+  <h2>Cite</h2>
+  <div class="pp-text">
+<pre><button class="pp-copy" data-target="pp-bib" type="button">Copy</button><code id="pp-bib">@software{obrien2026buildhardware,
+  author  = {O'Brien, Patrick},
+  title   = {build-hardware-with-ai: checks, tools and skills
+             for AI agents that build hardware},
+  year    = {2026},
+  version = {0.2.1},
+  license = {MIT},
+  url     = {https://github.com/cforcomputer/build-hardware-with-ai}
+}</code></pre>
+  </div>
+</section>

@@ -9,7 +9,7 @@
   <title>
     {%- if page.url == "/" -%}
       {{ site.seo_title | default: site.title }}
-    {%- elsif page.layout == "post" -%}
+    {%- elsif page.layout == "post" or page.layout == "project" -%}
       {{ page.title }} · {{ site.author }}
     {%- elsif page.title -%}
       {{ page.title }}
@@ -34,6 +34,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" />
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
   <link rel="stylesheet" href="{{ "/assets/css/substack.css" | relative_url }}" />
+  {%- if page.layout == "project" %}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="{{ "/assets/css/project.css" | relative_url }}" />
+  {%- endif %}
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.css" integrity="sha384-OH8qNTHoMMVNVcKdKewlipV4SErXqccxxlg6HC9Cwjr5oZu2AdBej1TndeCirael" crossorigin="anonymous">
 
   <script src="{{ "/assets/js/instantpage-5.2.0.js" | relative_url }}" type="module"></script>
